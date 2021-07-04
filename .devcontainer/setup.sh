@@ -12,16 +12,16 @@ apt-get install -y \
 sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 # Install node.js 14.x LTS
-sudo nvm install --lts=fermium
+nvm install --lts=fermium
 
 # Install Yarn
-sudo npm install -g yarn
+npm install -g yarn --unsafe-perm
 
 # Install Gatsby
-sudo npm install -g gatsby-cli
+npm install -g gatsby-cli --unsafe-perm
 
 # Install BooGi
-sudo npm install -g boogi-cli
+npm install -g boogi-cli --unsafe-perm
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
