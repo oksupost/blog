@@ -17,6 +17,8 @@
   "dockerFile": "Dockerfile",
   "forwardPorts": [8000],
   "settings": {
+    "workbench.colorTheme": "GitHub Light Default",
+    "workbench.iconTheme": "vscode-icons",
     "terminal.integrated.profiles.linux": {
       "zsh": {
         "path": "zsh",
