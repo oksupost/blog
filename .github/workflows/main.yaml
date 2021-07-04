@@ -24,6 +24,16 @@ jobs:
       with:
         node-version: '14'
 
+    - name: Install Yarn CLI
+      shell: bash
+      run: |
+        npm install -g yarn
+
+    - name: Install Boogi CLI
+      shell: bash
+      run: |
+        npm install -g boogi-cli
+
     - name: Build app
       shell: bash
       run: |
@@ -44,8 +54,8 @@ jobs:
     - name: Publish artifacts
       shell: bash
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.email "blog@fusiondev.kr"
+        git config --local user.name "Fusion Dev Blog"
         git add ./docs/\* --force
         git commit -m "Publish: ${{ github.event.head_commit.message }}"
 
