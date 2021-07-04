@@ -1,0 +1,5 @@
+# This is default jargon that you can use. Feel free to change it. See: https://boogi.netlify.app/editing/rich_content/abbreviations
+'fds':
+  name: fds
+  long_name: Fusion Dev Study
+  description: This is the website for fusion devs who use Microsoft Power Platform for their work.

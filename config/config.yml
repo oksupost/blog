@@ -1,0 +1,62 @@
+metadata:
+  name: Fusion Dev Study
+  short_name: fds
+  description: >-
+    This is the website for fusion devs who use Microsoft Power Platform for
+    their work.
+  language: ko
+  url: 'https://study.fusiondev.kr'
+  pathPrefix: /
+  gaTrackingId: null
+  favicon: /assets/favicon.png
+  themeColor: '#0066cc'
+header:
+  enabled: true
+  logo: /assets/logo.png
+  links: []
+sidebar:
+  ignoreIndex: false
+  forcedNavOrder: []
+  expanded: []
+  groups: []
+  links: []
+  poweredBy: {}
+  enabled: true
+pwa:
+  enabled: true
+  manifest:
+    icon: /assets/logo.png
+    display: minimal-ui
+    crossOrigin: anonymous
+features:
+  editOnRepo:
+    editable: true
+    location: 'https://github.com/fusiondevkr/blog'
+    type: github
+  search:
+    enabled: false
+    indexName: docs
+    showStats: true
+    pagination:
+      enabled: true
+  rss:
+    enabled: true
+    showIcon: true
+    copyright: ''
+    categories: []
+    matchRegex: ^/
+    outputPath: /rss.xml
+  darkMode:
+    enabled: true
+    default: false
+social:
+  facebook: 'https://facebook.com/groups/fusiondevkr'
+  github: 'https://github.com/fusiondevkr'
+  twitter: 'https://twitter.com/fusiondevkr'
+  youtube: 'https://youtube.com/fusiondevkr'
+search:
+  enabled: true
+  startComponent: input
+  placeholder: Search...
+  pagination:
+    enabled: true
