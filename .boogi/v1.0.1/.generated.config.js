@@ -85,26 +85,20 @@ module.exports = {
             "type": "github"
         },
         "search": {
-            "enabled": false,
+            "enabled": true,
             "indexName": "docs",
             "algoliaAppId": null,
             "algoliaSearchKey": null,
             "algoliaAdminKey": null,
-            "excerptSize": 20000,
+            "excerptSize": 10000,
             "engine": "localsearch",
             "placeholder": "Search",
-            "startComponent": "icon",
+            "startComponent": "input",
             "debounceTime": 380,
             "snippetLength": 23,
             "hitsPerPage": 10,
             "showStats": true,
-            "localSearchEngine": {
-                "encode": "advanced",
-                "tokenize": "full",
-                "threshold": 2,
-                "resolution": 30,
-                "depth": 20
-            },
+            "localSearchEngine": {},
             "pagination": {
                 "enabled": true,
                 "totalPages": 10,
@@ -140,7 +134,7 @@ module.exports = {
             "height": 300
         },
         "rss": {
-            "enabled": true,
+            "enabled": false,
             "showIcon": true,
             "title": "My RSS feed",
             "copyright": "",

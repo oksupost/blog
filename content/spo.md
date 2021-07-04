@@ -1,5 +1,6 @@
 ---
-title: '셰어포인트 온라인'
+title: 셰어포인트 온라인
+description: 셰어포인트 온라인 랜딩 페이지
 order: 5
 ---
 

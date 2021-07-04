@@ -45,14 +45,21 @@ features:
     editable: true
     location: 'https://github.com/fusiondevkr/blog'
     type: github
+  toc:
+    show: true
+    depth: 3
   search:
-    enabled: false
-    indexName: docs
+    enabled: true
+    engine: localsearch
+    localSearchEngine: balance
+    excerptSize: 10000
+    # indexName: docs
+    startComponent: input
     showStats: true
     pagination:
       enabled: true
   rss:
-    enabled: true
+    enabled: false
     showIcon: true
     copyright: ''
     categories: []
