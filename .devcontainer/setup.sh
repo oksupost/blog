@@ -27,8 +27,8 @@ nvm install --lts=fermium
 # Use the npm 14.x LTS
 nvm use --lts=fermium
 
-# # Install oh-my-zsh plugins
-# npm install -g spaceship-prompt --unsafe-perm
+# Install oh-my-zsh plugins
+npm install -g spaceship-prompt --unsafe-perm
 
 # Install Yarn
 npm install -g yarn --unsafe-perm
