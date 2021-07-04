@@ -11,9 +11,6 @@ apt-get install -y \
 # Install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
-# Install node.js 14.x LTS
-nvm install --lts=fermium
-
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp -R /root/.oh-my-zsh /home/$USERNAME
@@ -32,7 +29,6 @@ nvm use --lts=fermium
 
 # Install oh-my-zsh plugins
 npm install -g spaceship-prompt --unsafe-perm
-# source ~/.zshrc
 
 # Install Yarn
 npm install -g yarn --unsafe-perm
