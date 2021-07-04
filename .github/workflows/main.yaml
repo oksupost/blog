@@ -1,0 +1,56 @@
+name: Build and Publish Static Website to GH Pages
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  build_and_publish:
+    name: Build and publish
+    if: github.repository_owner == 'fusiondevkr' && github.ref == 'refs/heads/main'
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+
+    - name: Setup node.js SDK
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Build app
+      shell: bash
+      run: |
+        boogi build
+
+    - name: Copy CNAME
+      shell: bash
+      run: |
+        mv ./docs/CNAME .
+
+    - name: Copy artifacts
+      shell: bash
+      run: |
+        rm -rf ./docs
+        mv ./public ./docs
+        mv ./CNAME ./docs
+
+    - name: Publish artifacts
+      shell: bash
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add ./docs/\* --force
+        git commit -m "Publish: ${{ github.event.head_commit.message }}"
+
+    - name: Push artifacts
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
