@@ -1,7 +1,6 @@
 ---
-title: 파워 플랫폼 일반
-description: 파워 플랫폼 전반적으로 공유할 만한 내용들을 정리하는 페이지
-order: 0
+title: 파워 플랫폼
+description: 파워 플랫폼 랜딩 페이지
 ---
 
 [파워 플랫폼][power platform]

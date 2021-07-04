@@ -1,7 +1,7 @@
 ---
 title: 파워 버추얼 에이전트
 description: 파워 버추얼 에이전트 중심으로 공유할 만한 내용들을 정리하는 페이지
-order: 3
+order: 1300
 ---
 
 [파워 버추얼 에이전트][power virtual agents]

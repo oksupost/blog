@@ -1,7 +1,7 @@
 ---
 title: 파워 BI
 description: 파워 BI 중심으로 공유할 만한 내용들을 정리하는 페이지
-order: 4
+order: 1400
 ---
 
 [파워 BI][power bi]

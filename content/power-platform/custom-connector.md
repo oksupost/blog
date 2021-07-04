@@ -1,10 +1,10 @@
 ---
-title: 파워 오토메이트
-description: 파워 오토메이트 중심으로 공유할 만한 내용들을 정리하는 페이지
-order: 1200
+title: 커스텀 커넥터
+description: 파워 플랫폼 전반에 걸쳐 공통적으로 쓰이는 커스텀 커넥터 내용들을 정리하는 페이지
+order: 1000
 ---
 
-[파워 오토메이트][power automate]
+[파워 플랫폼][power platform]
 
 
 [power platform]: https://powerplatform.microsoft.com/ko-kr/?WT.mc_id=github-0000-juyoo
