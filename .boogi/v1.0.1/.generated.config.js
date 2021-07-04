@@ -23,7 +23,28 @@ module.exports = {
         "ignoreIndex": false,
         "forcedNavOrder": [],
         "expanded": [],
-        "groups": [],
+        "groups": [
+            {
+                "order": 0,
+                "path": "/power-platform",
+                "title": ":rocket: 파워 플랫폼"
+            },
+            {
+                "order": 100,
+                "path": "/spo",
+                "title": ":rainbow: 셰어포인트 온라인"
+            },
+            {
+                "order": 200,
+                "path": "/d365",
+                "title": ":fuelpump: 다이나믹스 365"
+            },
+            {
+                "order": 300,
+                "path": "/certs",
+                "title": ":scroll: 자격증 준비"
+            }
+        ],
         "links": [],
         "poweredBy": {}
     },
