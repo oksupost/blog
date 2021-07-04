@@ -18,12 +18,13 @@ cp /root/.zshrc /home/$USERNAME
 sed -i -e "s/\/root\/.oh-my-zsh/\/home\/$USERNAME\/.oh-my-zsh/g" /home/$USERNAME/.zshrc
 chown -R $USER_UID:$USER_GID /home/$USERNAME/.oh-my-zsh /home/$USERNAME/.zshrc
 
+# Install node.js 14.x LTS
+nvm install --lts=fermium
+nvm use --lts=fermium
+
 # Install oh-my-zsh plugins
 npm config set ignore-scripts false
 npm install -g spaceship-prompt --unsafe-perm
-
-# Install node.js 14.x LTS
-nvm install --lts=fermium
 
 # Install Yarn
 npm install -g yarn --unsafe-perm
