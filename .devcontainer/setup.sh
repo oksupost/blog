@@ -20,3 +20,25 @@ cp -R /root/.oh-my-zsh /home/$USERNAME
 cp /root/.zshrc /home/$USERNAME
 sed -i -e "s/\/root\/.oh-my-zsh/\/home\/$USERNAME\/.oh-my-zsh/g" /home/$USERNAME/.zshrc
 chown -R $USER_UID:$USER_GID /home/$USERNAME/.oh-my-zsh /home/$USERNAME/.zshrc
+
+# Enable nvm
+. ~/.nvm/nvm.sh
+
+# Install node.js 14.x LTS
+nvm install --lts=fermium
+
+# Use the npm 14.x LTS
+nvm use --lts=fermium
+
+# Install oh-my-zsh plugins
+npm install -g spaceship-prompt --unsafe-perm
+# source ~/.zshrc
+
+# Install Yarn
+npm install -g yarn --unsafe-perm
+
+# Install Gatsby
+npm install -g gatsby-cli --unsafe-perm
+
+# Install BooGi
+npm install -g boogi-cli --unsafe-perm
