@@ -24,6 +24,11 @@ jobs:
       with:
         node-version: '14'
 
+    - name: Install Gatsby CLI
+      shell: bash
+      run: |
+        npm install -g gatsby-cli
+
     - name: Install Yarn CLI
       shell: bash
       run: |
